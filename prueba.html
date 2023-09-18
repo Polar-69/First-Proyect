@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Video</title>
+	<script type="text/javascript">
+		
+		function iniciar() {
+		 video=document.getElementById('video');
+		 video.addEventListener('ended',reproducir,false);
+	    }
+
+		function reproducir() {
+         video.setAttribute('src', 'musica2.mp4');
+		}
+		window.addEventListener('load',iniciar,false);
+	</script>
+</head>
+<body>
+	<section>
+		<video id="video" autoplay muted
+        controls src="musica.mp4">
+        </video>
+	</section>
+</body>
+</html>
